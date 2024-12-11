@@ -28,7 +28,10 @@ SECRET_KEY = key
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+with open("keys/server.ip") as f:
+    ip = f.read()
+
+ALLOWED_HOSTS = [ip]
 
 
 # Application definition
