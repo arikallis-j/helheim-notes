@@ -6,7 +6,7 @@ with open('keys/server.ip', 'r') as file:
 def start_my_server():
     try:
         server = socket.create_server((IP, 8000))
-        server.listen(4)
+        server.listen(100)
         while True:
             print("Working...")
             client_socket, address = server.accept()
