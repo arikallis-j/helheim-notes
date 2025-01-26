@@ -1,6 +1,6 @@
 import socket
 
-with open('keys/server.ip', 'rb') as file:
+with open('keys/server.ip', 'r') as file:
     IP = file.read()
 
 def start_my_server():
